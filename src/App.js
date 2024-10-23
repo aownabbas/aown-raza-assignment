@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Register from './screens/register';
+import Protected from './components/protected';
+import Login from './screens/login';
+import { useSelector } from 'react-redux';
+import { login_status } from './redux/slices/registerSlice';
+import MeetingsCalender from './screens/meetingsCalender';
 
 function App() {
+  const data = useSelector(login_status);
+  console.log(data, 'data');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/sign-up" element={<Register />} />
+
+        <Route
+          path="/"
+          element={
+            <Protected isLoggedIn={data}>
+              <MeetingsCalender />
+            </Protected>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 

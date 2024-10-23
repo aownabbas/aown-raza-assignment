@@ -1,0 +1,116 @@
+/* Product Card Container */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Product Image */
+  .product-image {
+    width: 130px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Details */
+  .product-details h4 {
+    margin: 10px 0;
+  }
+  
+  /* Product Bottom Container */
+  .product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Buttons Container */
+  .buttons {
+    display: flex;
+    justify-content: space-between; /* Ensures the buttons are evenly spaced */
+    width: 100%;
+  }
+  
+  .buttons button {
+    width: 50%; /* Each button takes up 50% of the parent container */
+    padding: 14px;
+    color: white; /* Text color */
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* First button: Add to Cart */
+  .buttons button:first-child {
+    background-color: black;
+  }
+  
+  /* Second button: Quick View */
+  .buttons button:last-child {
+    background-color: blue;
+  }
+  
+  /* Product Info */
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+  }
+  
+  /* Product Name (Left-aligned) */
+  .product-info .product-name {
+    font-weight: bold;
+    color: black;
+    text-align: left;
+  }
+  
+  /* Product Price (Right-aligned) */
+  .product-info .product-price {
+    font-weight: bold;
+    color: black;
+    text-align: right;
+  }
+  
+  /* Divider */
+  .divider {
+    border: none;
+    border-top: 1px solid gray;
+    margin: 5px 0; /* Less margin for equal top and bottom spacing */
+  }
+  
+  /* Product Extra (Category and Rating Alignment) */
+  .product-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Product Category */
+  .product-extra .product-category {
+    color: gray;
+    text-align: left;
+  }
+  
+  /* Ratings */
+  .product-extra .product-rating {
+    text-align: right; /* Aligns the rating to the right */
+  }
+  
+  .product-rating {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .product-rating .star {
+    color: black; /* Black stars */
+    margin-left: 2px; /* Small spacing between stars */
+    font-size: 14px; /* Adjust size as needed */
+  }
+  

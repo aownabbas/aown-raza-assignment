@@ -1,0 +1,94 @@
+/* Sidebar container */
+.sidebar {
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Profile Section */
+.profile {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: px; /* Space below profile */
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rounded corners */
+  margin-right: 15px;
+}
+
+/* Profile Info */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Menu List */
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px; /* 30px space below the email */
+}
+
+.menu-item {
+  background-color: transparent; /* Default transparent background */
+  color: black;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item.active {
+  background-color: #007bff; /* Blue background for active menu */
+  color: white;
+}
+
+.menu-item:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+}
+
+/* Menu icon styling */
+.menu-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.logout-btn {
+  background-color: #d9534f; /* Red background */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: auto; /* Pushes the button to the bottom */
+  margin-bottom: 35px; /* Ensures 10px space from the bottom of the sidebar */
+}
+
+.logout-btn:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+.logout-btn .links {
+  color: #ffffff;
+}
